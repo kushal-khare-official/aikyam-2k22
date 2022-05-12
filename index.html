@@ -72,7 +72,7 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.png); background-size: cover; background-position: center !important;">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.png);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -131,12 +131,55 @@
 		</div>
 	</div>
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Excited?</h2>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Special Events</span>
+					<h2>Event Venue & Timings</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-3 col-sm-3 text-center"></div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Main Event</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>7:00 AM</span>
+										<span>8:00 PM</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Auditorium</span>
+										<span>15th May, 2022</span>
+									</div>
+									<p>For those who have not yet attended any function in AUDITORIUM, the time has finally arrived for you witness the grand celebration of "AIKYAM" in "AUDITORIUM".</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center"></div>
+							<!-- <div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Wedding Party</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>7:00 PM</span>
+										<span>12:00 AM</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Monday 28</span>
+										<span>November, 2016</span>
+									</div>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div> -->
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -517,13 +560,18 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date('May 15, 2022 7:00');
+    var d = new Date('Sun May 15 2022 19:00:00 GMT+0530');
+
+	console.log(d)
 
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate()
+        day: d.getDate(),
+		hours: d.getHours(),
+		minutes: d.getMinutes(),
+		seconds: d.getSeconds(),
     });
 
     //jQuery example
